@@ -22,7 +22,7 @@ It drafts replies for the two most urgent items but never sends, archives or del
 
 ### How to install
 
-- **Claude app:** download the `technicole-ai-inbox-brief` folder, zip it, and add it as a custom skill. Anthropic's help center article on using skills in Claude walks through the steps.
+- **Claude app:** download `technicole-ai-inbox-brief.zip` from this repo (click the file, then the download button) and upload it as a custom skill: Customize, Skills, the + button, Upload a skill. Anthropic's help center article on using skills in Claude walks through the steps.
 - **Claude Code:** copy the `technicole-ai-inbox-brief` folder into `~/.claude/skills/`.
 
 Then ask Claude to "check my email" or "run the techNicole.ai inbox brief." On the first run it asks a few quick setup questions, like which newsletters count as noise.
