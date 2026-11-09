@@ -37,6 +37,32 @@ Most people get the most out of it as a scheduled task. Ask Claude to "schedule 
 
 Everything is plain text in `SKILL.md`. Change the noise list, the section order or the tone to fit how you work.
 
+## Job Site Sweep Construction Template
+
+A job tracker for construction careers, built from the one I use for my own search. Instead of trusting job-alert algorithms, it reads company career sites directly, checks that every job is still open, scores each one out of 100 and keeps one ranked list you can work from.
+
+What it does:
+
+- **Sets itself up from your resume.** A one-time setup interview covers target roles, pay floor, commute, companies, your best wins, scoring weights and any exceptions. Every question comes with a suggested answer, and it can build your company list from ENR, BD+C and AGC sources.
+- **Only cuts on two things.** Pay that can't reach your floor and a commute past your limit. Everything else is scored, so good jobs don't disappear on a technicality.
+- **Flags mail from companies on your list.** Interview requests, recruiter notes and status updates show up on the tracker row, with a draft reply saved when one is needed.
+- **Keeps three linked pages.** A clean ranked tracker, a notes page with why each job fits and why others were cut, and short briefs on the top 20 companies.
+
+It drafts but never applies, sends email or messages anyone without your OK.
+
+### What you need
+
+- Claude with memory turned on, since your rules live there.
+- The Gmail connector, for job alerts and mail from employers. The Indeed connector is optional and adds more leads.
+- Scheduled tasks are optional. Without them, just ask Claude to run the sweep.
+
+### How to install
+
+- **Claude app:** download `job-site-sweep-construction-template.zip` from this repo (click the file, then the download button) and upload it: Customize, Skills, the + button, Upload a skill.
+- **Claude Code:** copy the `job-site-sweep-construction-template` folder into `~/.claude/skills/`.
+
+Then ask Claude to "run my job sweep." The first run is setup; after that, it sweeps.
+
 Enjoy! Let me know if you have any feedback.
 
 ---
