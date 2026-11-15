@@ -54,15 +54,16 @@ Start by asking for their resume (a file or pasted text) and, if they have one, 
 Ask, with these recommendations:
 
 1. **Name and situation.** Recommend from the resume: their most recent title and years in construction. Ask whether they are working, laid off or about to be.
-2. **Target roles.** Recommend a three-step ladder built from their resume. Example for a project manager: full marks for Project Manager, Senior Project Manager, Construction Manager and Project Executive; partial credit for Owner's Representative, Preconstruction Manager and Superintendent; zero for Estimator-only, Safety-only, sales and field labor roles. Adjust it to what they have actually done.
-3. **Pay floor.** Recommend their most recent base salary as the floor, and offer to check what employers in their area are posting for their title before they decide. Explain that a posted range passes if it can reach the floor, even if it starts lower.
-4. **Location.** Recommend a commute limit in minutes rather than miles (for example 45 minutes each way), since construction roles are usually on site most days and remote rarely applies. Ask whether jobsite travel or out-of-town projects are acceptable, and whether they would relocate.
-5. **Companies.** Recommend building the list from sources that rank contractors, and offer to pull the firms in their region: the ENR Top 400 Contractors list, ENR's regional Top Contractors lists, the Building Design+Construction Giants 400, and the member directory of their local AGC chapter. Suggest three groups (for example large general contractors, owners and developers, and regional firms), plus any company they will not work for and why.
-6. **Proof points.** Recommend five or six, drawn from the resume, each with a number: project types and dollar values, schedules beaten, team size led, safety record, and credentials such as PMP, OSHA 30, LEED AP or CCM. Push for specifics; "managed projects" is not a proof point, "delivered a $40M hospital two weeks early" is.
-7. **Scoring weights.** Recommend the default model in section 5 (Function 30, Scope 30, Growth 20, Pay 15, Workplace 5) and explain it in one line: the kind of job and their proof for it matter most, the company's momentum next, and pay last because the pay gate already guarantees every role can reach their floor. Change it only if they ask.
-8. **People.** Ask who has offered to refer them and where those people work. Recommend also listing former bosses and project owners who now work at target companies. Explain that every sweep will name their contacts at each ranked company, because a referral moves their odds more than anything else.
-9. **Email and job alerts.** Recommend connecting the Gmail they use for job searching, and setting up job alerts on LinkedIn and Indeed plus each target company's own careers site, so every run has fresh leads. If an Indeed connector is available in Claude, recommend turning it on too; the sweep can then search Indeed directly (section 3).
-10. **Exceptions.** Explain that exceptions are the "except for" rules that bend the standard ones, and that most people have a few once they think about it. Offer examples to react to, then ask which apply and whether they have others:
+2. **Target roles.** Recommend a three-step ladder built from their resume. Example for a project manager: full marks for Project Manager, Senior Project Manager, Construction Manager and Project Executive; partial credit for Owner's Representative, Preconstruction Manager and Superintendent; zero for Estimator-only, Safety-only, sales and field labor roles. Adjust it to what they have actually done. Then ask for the other words employers use for the same work, because many jobs are titled for the work rather than the function and a title-only search misses them. Recommend a list from their resume (for a project manager: Operations Manager, Project Delivery Lead, Program Manager, Owner's Project Manager, Development Manager, Capital Projects Manager). These count as full marks too.
+3. **Level.** Recommend their most recent level from the resume, and confirm which titles count as one step up (for a Senior Project Manager: Project Executive, Senior Construction Manager) and which are two or more steps up (Vice President of Operations, Director of Construction, Regional Manager at a large firm). The rank uses this to put jobs they can realistically get above jobs they can't (section 5).
+4. **Pay floor.** Recommend their most recent base salary as the floor, and offer to check what employers in their area are posting for their title before they decide. Explain that a posted range passes if it can reach the floor, even if it starts lower.
+5. **Location.** Recommend a commute limit in minutes rather than miles (for example 45 minutes each way), since construction roles are usually on site most days and remote rarely applies. Ask whether jobsite travel or out-of-town projects are acceptable, and whether they would relocate.
+6. **Companies.** Recommend building the list from sources that rank contractors, and offer to pull the firms in their region: the ENR Top 400 Contractors list, ENR's regional Top Contractors lists, the Building Design+Construction Giants 400, and the member directory of their local AGC chapter. Suggest three groups (for example large general contractors, owners and developers, and regional firms), plus any company they will not work for and why.
+7. **Proof points.** Recommend five or six, drawn from the resume, each with a number: project types and dollar values, schedules beaten, team size led, safety record, and credentials such as PMP, OSHA 30, LEED AP or CCM. Push for specifics; "managed projects" is not a proof point, "delivered a $40M hospital two weeks early" is.
+8. **Scoring weights.** Recommend the default model in section 5 (Attainability 35, Function 20, Scope 15, Growth 15, Pay 10, Workplace 5) and explain it in one line: jobs they can realistically get come first, then the kind of job and their proof for it, then the company's momentum, and pay last because the pay gate already guarantees every role can reach their floor. Change it only if they ask.
+9. **People.** Ask who has offered to refer them and where those people work. Recommend also listing former bosses and project owners who now work at target companies. Explain that every sweep will name their contacts at each ranked company, because a referral moves their odds more than anything else.
+10. **Email and job alerts.** Recommend connecting the Gmail they use for job searching, and setting up job alerts on LinkedIn and Indeed plus each target company's own careers site, so every run has fresh leads. If an Indeed connector is available in Claude, recommend turning it on too; the sweep can then search Indeed directly (section 3).
+11. **Exceptions.** Explain that exceptions are the "except for" rules that bend the standard ones, and that most people have a few once they think about it. Offer examples to react to, then ask which apply and whether they have others:
     - A longer commute or more site days for a specific company or project they really want ("I'd drive 75 minutes for Swinerton").
     - Companies they won't work for, with the reason (a former employer, a safety record, a bad reputation, a non-compete).
     - Project types, sectors or schedules to skip (single-family residential, night shifts, a FIFO rotation) or to favor (healthcare, data centers, public work).
@@ -82,8 +83,11 @@ aliases: [job sweep config, job search rules]
 ---
 ## Gates
 - [stated] Location: ___ ; max office/site days: ___ ; remote: yes/no ; relocate: yes/no
+## Level
+- [stated] Current level: ___ ; one step up: ___ ; two or more steps up: ___
 ## Function ladder
 - [stated] Full marks: ___
+- [stated] Other titles for the same work (full marks): ___
 - [stated] Partial: ___
 - [stated] Zero (not a fit): ___
 ## Companies
@@ -93,7 +97,7 @@ aliases: [job sweep config, job search rules]
 ## Proof points (scope items)
 - [stated] ___
 ## Scoring weights
-- [stated] Function __, Scope __, Growth __, Pay __, Workplace __
+- [stated] Attainability __, Function __, Scope __, Growth __, Pay __, Workplace __
 ## Exceptions
 - [stated] ___ (what it overrides)
 ## Referrals
@@ -127,8 +131,8 @@ A role lands on the ranked list if it passes both. Everything else is scored, no
 ## 3. Where to look
 
 1. **Email first.** Job alerts, recruiter mail and application status mail since the last run (at least the last 7 days on a full sweep). Recruiter mail has no window: report anything unanswered however old.
-2. **Company boards.** Every company in the config, read on the company's own careers site or the hiring system it uses (Workday, Greenhouse, Lever, Ashby, iCIMS, and similar). Read the full list of openings, not a search result.
-3. **Indeed search, if the connector is on.** It reaches jobs alert emails never send and companies outside the config list. Run several narrow searches rather than one broad one, since each returns only about 10 results: one per full-marks title on the function ladder, each against their home city and, if they'd travel, their region. Results match loosely, so expect most to fail a gate on their face; drop those without counting them as cuts. For anything that could pass both gates, open the full job details, then find the same job on the company's own site and link that. Don't store Indeed job IDs or links; they change between searches. Pay shown on Indeed counts as the company's number only once the same figure is on the company's own posting. If the connector is off or errors, write "Indeed: skipped (reason)" and keep going.
+2. **Company boards, two reads each.** Every company in the config, read on the company's own careers site or the hiring system it uses (Workday, Greenhouse, Lever, Ashby, iCIMS, and similar). On every board, do both of these and merge the results before the gates: (a) filter to the job family, department or category that holds their work (Operations, Project Management, Construction, Preconstruction, or whatever the board calls it) and read every opening in it, whatever the title says; and (b) search each full-marks title and each of the other titles for the same work from the config. A title-only search misses jobs named for their work rather than their function, and a board only counts as read when both reads ran. If a board has no such filter, say so in the run's notes. On Workday, the job list response carries a `facets` list; find the matching job family there and send its id back in `appliedFacets` with an empty search.
+3. **Indeed search, if the connector is on.** It reaches jobs alert emails never send and companies outside the config list. Run several narrow searches rather than one broad one, since each returns only about 10 results: one per full-marks title on the function ladder and one per other title for the same work, each against their home city and, if they'd travel, their region. Results match loosely, so expect most to fail a gate on their face; drop those without counting them as cuts. For anything that could pass both gates, open the full job details, then find the same job on the company's own site and link that. Don't store Indeed job IDs or links; they change between searches. Pay shown on Indeed counts as the company's number only once the same figure is on the company's own posting. If the connector is off or errors, write "Indeed: skipped (reason)" and keep going.
 4. **Leads from elsewhere.** LinkedIn and other job sites can point at a role. They are never the evidence and never the link. Find the same job on the company's own site.
 
 **Boards that only open in a browser.** Some company sites only load in a real browser. Scheduled runs are cloud only and can't use one, so they try each such board once; if it fails, mark its rows "Could not verify" with the date, list the board under "Needs a browser" in the run's notes, and move on. The next time the user runs a sweep themselves in the desktop app with a browser connected, read those boards first.
@@ -158,21 +162,30 @@ The defaults below are the recommended model. If the config lists different weig
 
 | Input | Points |
 |---|---|
-| Function fit | 30 |
-| Scope match to their proof points | 30 |
-| Company growth | 20 |
-| Pay | 15 |
+| Attainability (level fit 15, minimum quals 20) | 35 |
+| Function fit | 20 |
+| Scope match to their proof points | 15 |
+| Company growth | 15 |
+| Pay | 10 |
 | Workplace signal | 5, starts at 3 |
 
-The page script carries `SCORING_MODEL = 100`. If the user ever changes the weights, bump it and rescore every row in the next full sweep before publishing, so the list never mixes two scales.
+Why attainability leads: a model that scores only the job's appeal ranks long shots at the top, because jobs above someone's level tend to pay more and list every kind of work in their postings. A job they can realistically get should beat a job two levels up that they would not be shortlisted for.
 
-**Function, 30.** From the config's ladder: full-marks roles 30; partial roles 18; a role with the right title but mostly the wrong work 8; zero-list roles 0. Title alone never decides it; read what the job actually does.
+The page script carries `SCORING_MODEL = 200`. If the user ever changes the weights, bump it and rescore every row in the next full sweep before publishing, so the list never mixes two scales.
 
-**Scope, 30.** Add points for each proof point the posting clearly asks for, capped at 30. Weight the config's proof points so the strongest one is worth about a third of the total and the rest share the remainder; write the weights into the config the first time you score. Name which proof points matched on the role's notes.
+**Attainability, 35.** Two parts.
 
-**Growth, 20.** Last 12 to 24 months. Public company: revenue up 20%+ and headcount up, 20; up 10 to 20% with headcount up, 12; flat or down, or a restructuring in the latest annual report, 3. Private company: new funding or a major win inside 12 months and still hiring, 20; steady hiring with nothing new, 9; layoffs reported in the last 12 months, 0. Only company-written material available: 8, labelled "growth read unavailable". In fields like construction, a strong backlog, major contract wins and steady hiring count as growth; say which signal you used.
+*Level fit, 15.* Against the config's Level line: their current level or a lateral title at a smaller firm, 15; one step up, 12; a step down they would still take, 9; two or more steps up, 0 to 4 (4 only at a much smaller firm). Where the posting's scope contradicts its title (a Project Manager title running a $500M program with five PMs reporting in), score the scope and say so.
 
-**Pay, 15.** Where their floor sits inside the band: floor at or above the bottom and the top well above, 15; floor at or above the bottom, 13; floor below the midpoint, 11; floor above the midpoint, 7.5; floor within about 5% of the top, 4. Multiply by 0.7 for an estimated band.
+*Minimum quals, 20.* Start at 20. Read the posting's own stated minimums every time, never a summary. Subtract 8 for each clear miss (a required license or certification they don't hold, such as a PE or a state contractor license; years in a named sector they lack, such as "10 years of healthcare construction"; a clearance; a required language; more years managing people or project dollar volume than their record shows) and 3 for each arguable one. Floor 0. When the minimums can't be read, score 10, mark the card "quals unread" and list it as owed. Never carry a score on a card that was never written.
+
+**Function, 20.** From the config's ladder: full-marks roles and other titles for the same work 20; partial roles 12; a role with the right title but mostly the wrong work 5; zero-list roles 0. Title alone never decides it; read what the job actually does.
+
+**Scope, 15.** Add points for each proof point the posting clearly asks for, capped at 15. Scope credits the work, not the seniority of the job: a vice president posting lists every proof point and earns nothing extra for it, because Attainability already scores the level. Weight the config's proof points so the strongest one is worth about a third of the total and the rest share the remainder; write the weights into the config the first time you score. Name which proof points matched on the role's notes.
+
+**Growth, 15.** Last 12 to 24 months. Score on the brackets below (out of 20), then multiply by 0.75. Public company: revenue up 20%+ and headcount up, 20; up 10 to 20% with headcount up, 12; flat or down, or a restructuring in the latest annual report, 3. Private company: new funding or a major win inside 12 months and still hiring, 20; steady hiring with nothing new, 9; layoffs reported in the last 12 months, 0. Only company-written material available: 8, labelled "growth read unavailable". In fields like construction, a strong backlog, major contract wins and steady hiring count as growth; say which signal you used.
+
+**Pay, 10.** Whether the band fits a job at their level, with no extra points for bands above it. Their floor inside the band and more than about 5% under the top, 10; the band's bottom at or above their floor, 10, unless the bottom is 20% or more above their floor, which scores 6 and flags a level check, since a band built that high usually belongs to a bigger job; their floor within about 5% of the top, 4. Multiply by 0.7 for an estimated band. Before the first full sweep, check the floor against what their level actually pays: take the posted bands for at-level jobs on the tracker and tell them where the floor sits (median bottom, middle and top). If the floor sits above the middle of at-level bands, say so plainly; it means the gate is cutting jobs they could get.
 
 **Workplace, 5.** Start at 3. Credible national best-employer lists move it up to 5; credible negative signals (low Glassdoor rating on 300+ reviews, recent layoffs) move it toward 0. Small companies not covered by any list stay at 3.
 
@@ -180,15 +193,15 @@ The page script carries `SCORING_MODEL = 100`. If the user ever changes the weig
 
 **Fit score, for sorting.** Function plus scope, out of 60, is the role's fit score: how well the job matches what they can do, with company and pay left out. Show it as its own column and let the Open table sort by it as well as by the overall score, so they can look at the list both ways. The rank number always follows the overall score.
 
-**Odds are separate.** Next to the score, give a coarse odds band (under 10%, 10 to 25%, 25 to 50%, 50%+) with one line of reasoning: unmet must-haves, whether they have a referral or a live conversation with a recruiter or hiring manager, and how the company has responded to them before. Give the band a baseline: cold applications convert in single digits even for well-matched candidates, so say what lifts a role above that. When rank and odds disagree, say so in a note rather than demoting the role. Odds never move the rank.
+**Odds in their own column.** Next to the score, give a coarse odds band (under 10%, 10 to 25%, 25 to 50%, 50%+) with one line of reasoning: unmet must-haves, whether they have a referral or a live conversation with a recruiter or hiring manager, and how the company has responded to them before. Give the band a baseline: cold applications convert in single digits even for well-matched candidates, so say what lifts a role above that. Unmet must-haves already move the rank through Attainability; referrals and responsiveness show in the odds only. After every full sweep, count how many of the top 20 sit under 10%. If it's most of them, say so plainly at the top of the notes: the list is still aimed above their reach, and the level or function ladder in the config probably needs a look.
 
 **Referrals, every sweep.** For every company on the ranked list, name the people in the config's Referrals who work there. If a browser with their LinkedIn is available, also check for contacts at the top-ranked companies who would make good referrals, and list them on the role's notes card. Never message anyone.
 
-**Quals check.** For each ranked role, list the posting's stated minimums and whether they clearly meet each one. Report it; don't score it.
+**Quals check.** For each ranked role, list the posting's stated minimums in its own wording and whether they clearly meet each one (meets, misses, arguable). It feeds Attainability. Don't soften a miss into an arguable.
 
 ## 6. Tone of the results
 
-Give real reasons for every cut. Say plainly when a role is a stretch. Don't pad the list to look busy, and don't give generic advice to "network more".
+Give real reasons for every cut. Say plainly when a role is a stretch. A company on their won't-work-for list showing up anywhere on the ranked list is a failed sweep; check the config's Never line before publishing. Don't pad the list to look busy, and don't give generic advice to "network more".
 
 ## 7. The three pages
 

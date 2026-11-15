@@ -45,6 +45,8 @@ What it does:
 
 - **Sets itself up from your resume.** A one-time setup interview covers target roles, pay floor, commute, companies, your best wins, scoring weights and any exceptions. Every question comes with a suggested answer, and it can build your company list from ENR, BD+C and AGC sources.
 - **Only cuts on two things.** Pay that can't reach your floor and a commute past your limit. Everything else is scored, so good jobs don't disappear on a technicality.
+- **Ranks jobs you can realistically get first.** Each job is scored on whether it fits your level and whether you meet its stated minimums, so a long shot two levels up doesn't outrank a job you'd be shortlisted for.
+- **Reads each company's whole job family.** Many jobs are titled for the work, not the function, so it reads every opening in the right department as well as searching your titles.
 - **Flags mail from companies on your list.** Interview requests, recruiter notes and status updates show up on the tracker row, with a draft reply saved when one is needed.
 - **Keeps three linked pages.** A clean ranked tracker, a notes page with why each job fits and why others were cut, and short briefs on the top 20 companies.
 
