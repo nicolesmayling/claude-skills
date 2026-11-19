@@ -16,13 +16,13 @@ It drafts replies for the two most urgent items but never sends, archives or del
 
 ### What you need
 
-- Claude with the Gmail connector turned on. Google Calendar is optional but makes the brief better.
+- Claude with file creation turned on (your name, then Settings, Capabilities, "Create and edit files") and the Gmail connector added (Plugins in the left sidebar, search "Gmail," then connect). Google Calendar is optional but makes the brief better. Add it the same way.
 - A Gmail inbox. It uses Gmail's search, so it won't work with Outlook as written.
 - Memory turned on helps, since the ledger lives there. Without memory, Claude keeps the ledger in a document you can see.
 
 ### How to install
 
-- **Claude app:** download `technicole-ai-inbox-brief.zip` from this repo (click the file, then the download button) and upload it as a custom skill: Customize, Skills, the + button, Upload a skill. Anthropic's help center article on using skills in Claude walks through the steps.
+- **Claude app:** download `technicole-ai-inbox-brief.zip` from this repo (click the file, then the download button) and upload it as a skill: click Plugins in the left sidebar, then Add, then Upload plugin, and drop in the .zip.
 - **Claude Code:** copy the `technicole-ai-inbox-brief` folder into `~/.claude/skills/`.
 
 Then ask Claude to "check my email" or "run the techNicole.ai inbox brief." On the first run it asks a few quick setup questions, like which newsletters count as noise.
@@ -60,7 +60,7 @@ It drafts but never applies, sends email or messages anyone without your OK.
 
 ### How to install
 
-- **Claude app:** download `job-site-sweep-construction-template.zip` from this repo (click the file, then the download button) and upload it: Customize, Skills, the + button, Upload a skill.
+- **Claude app:** download `job-site-sweep-construction-template.zip` from this repo (click the file, then the download button) and upload it: Plugins in the left sidebar, then Add, then Upload plugin.
 - **Claude Code:** copy the `job-site-sweep-construction-template` folder into `~/.claude/skills/`.
 
 Then ask Claude to "run my job sweep." The first run is setup; after that, it sweeps.
